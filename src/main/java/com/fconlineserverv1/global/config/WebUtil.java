@@ -17,7 +17,7 @@ public class WebUtil {
     private final WebDriver driver;
 
     public WebUtil() throws IOException {
-        ClassPathResource resource = new ClassPathResource("static/chromedriver_win64/chromedriver.exe");
+        ClassPathResource resource = new ClassPathResource("static/chromedriver-win64/chromedriver.exe");
         String chromedriverPath = resource.getFile().getAbsolutePath();
         System.setProperty("webdriver.chrome.driver", chromedriverPath);
         ChromeOptions options=new ChromeOptions();
